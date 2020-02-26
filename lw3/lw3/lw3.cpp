@@ -5,7 +5,7 @@
 #include <algorithm>
 #include <string>
 #include <ctime> 
-#include <conio.h>
+
 
 using namespace std;
 clock_t start = clock();
@@ -16,7 +16,7 @@ DWORD WINAPI ThreadProc(CONST LPVOID lpParam)
     string OUTPUT_FILE_FIRST = "output" + to_string(*(int*)lpParam) + ".txt";
     ofstream fout(OUTPUT_FILE_FIRST);
     //cout << "Thread number" << *(int*)lpParam << endl;
-    for (auto i = 0; i < 1000000; i++)
+    for (auto i = 0; i < 100000; i++)
     {
         clock_t end = clock();
         fout << difftime(end, start) << endl;
