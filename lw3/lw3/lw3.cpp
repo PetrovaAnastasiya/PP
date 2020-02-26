@@ -27,7 +27,8 @@ DWORD WINAPI ThreadProc(CONST LPVOID lpParam)
 
 int main(int argc, char* argv[])
 {
-    cin.get();
+    char x;
+    cin>>x;
     int numThread = 0;
 
     if (argc != 0) {
