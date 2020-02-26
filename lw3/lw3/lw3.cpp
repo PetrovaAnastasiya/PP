@@ -5,6 +5,7 @@
 #include <algorithm>
 #include <string>
 #include <ctime> 
+#include <conio.h>
 
 using namespace std;
 clock_t start = clock();
@@ -26,6 +27,7 @@ DWORD WINAPI ThreadProc(CONST LPVOID lpParam)
 
 int main(int argc, char* argv[])
 {
+    cin.get();
     int numThread = 0;
 
     if (argc != 0) {
